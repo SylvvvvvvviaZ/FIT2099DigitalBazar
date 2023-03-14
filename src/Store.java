@@ -1,4 +1,3 @@
-import java.util.ArrayList; // import the ArrayList class
 public class Store {
     private Computer[] computers;
     private Printer[] printers;
@@ -19,8 +18,8 @@ public class Store {
     }
 
     public void createPrinters() {
-        this.printers[0] = new Printer("Laserjet", "Black and White", "HP");
-        this.printers[1] = new Printer("Pixma", "Color", "Canon");
+        this.printers[0] = new Printer(1, "Black and White", "HP");
+        this.printers[1] = new Printer(2, "Color", "Canon");
     }
 
     public void printComputers() {

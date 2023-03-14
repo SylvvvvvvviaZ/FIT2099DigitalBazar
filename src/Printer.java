@@ -1,8 +1,9 @@
-public class Printer {
+public class Printer extends Device{
     int ppm;
 
     //a constructor
-    public Printer(int ppm) {
+    public Printer(int ppm, String name, String description) {
+        super(name,description);
         this.ppm = ppm;
     }
 

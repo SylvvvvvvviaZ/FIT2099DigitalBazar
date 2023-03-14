@@ -1,10 +1,12 @@
-public class Computer {
+public class Computer extends Device{
     String manufacture;
 
 
     //a constructor
-    public Computer(String manufacture) {
+    public Computer(String manufacture, String name, String description) {
+        super(name,description);
         this.manufacture = manufacture;
+
     }
 
     //a getter
