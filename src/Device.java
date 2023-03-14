@@ -1,15 +1,13 @@
 public class Device {
-    public String name;
+    private String name;
+    private String description;
 
-    public String description;
-
-    //two-parameter constructor
     public Device(String name, String description) {
         this.name = name;
         this.description = description;
     }
 
-    //setters
+    // Setters
     public void setName(String name) {
         this.name = name;
     }
@@ -18,7 +16,7 @@ public class Device {
         this.description = description;
     }
 
-    //getters
+    // Getters
     public String getName() {
         return name;
     }
@@ -27,7 +25,7 @@ public class Device {
         return description;
     }
 
-    //toString method
+    // toString method
     @Override
     public String toString() {
         return "Device{" +
@@ -35,9 +33,4 @@ public class Device {
                 ", description='" + description + '\'' +
                 '}';
     }
-
-
-
-
-
 }
