@@ -1,5 +1,3 @@
-import java.util.Random;
-
 public abstract class Device {  //make it an abstract class.
     private String name;
     private String description;
