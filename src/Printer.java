@@ -7,15 +7,17 @@ public class Printer extends Device {
     }
 
     public int getPpm() {
+
         return ppm;
     }
 
     public void setPpm(int ppm) {
+
         this.ppm = ppm;
     }
 
     @Override
-    public String toString() {
-        return super.toString() + ", ppm=" + ppm + "]";
+    public int generateId() {
+        return Utils.nextID(100, 999);
     }
 }

@@ -15,7 +15,7 @@ public class Computer extends Device {
     }
 
     @Override
-    public String toString() {
-        return super.toString() + ", manufacture=" + manufacture + "]";
+    public int generateId() {
+        return Utils.nextID(100000, 9999999);
     }
 }

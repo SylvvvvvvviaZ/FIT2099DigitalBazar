@@ -1,32 +1,62 @@
-public class Store {
-    private Computer[] computers;
-    private Printer[] printers;
+import java.util.ArrayList;
+import java.util.Scanner;
 
-    public void initStore(int numComputers, int numPrinters) {
-        computers = new Computer[numComputers];
-        printers = new Printer[numPrinters];
+public class Store {
+    private ArrayList<Computer> computers;
+    private ArrayList<Printer> printers;
+
+    public Store() {
+        this.computers = new ArrayList<Computer>();
+        this.printers = new ArrayList<Printer>();
+    }
+
+    public void initStore(int numOfComputers, int numOfPrinters) {
+        computers = new ArrayList<>(numOfComputers);
+        printers = new ArrayList<>(numOfPrinters);
     }
 
     public void createComputers() {
-        computers[0] = new Computer("XPS", "Laptop 16 inch", "Dell");
-        computers[1] = new Computer("iMac", "Desltop 27 inch", "Apple");
-        computers[2] = new Computer("Thinkpad", "Laptop 14 inch", "Lenovo");
+        String name, description, manufacture;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter Device Name:");
+        name = scanner.nextLine();
+        System.out.print("Enter Device Description:");
+        description = scanner.nextLine();
+        System.out.print("Enter Computer Manufacture: ");
+        manufacture = scanner.nextLine();
+        Computer aComputer = new Computer(name, description, manufacture);
+        aComputer.setId(aComputer.generateId());
+        computers.add(aComputer);
     }
 
     public void createPrinters() {
-        printers[0] = new Printer("Mono Printer", "Ink_jet Printer", 10);
-        printers[1] = new Printer("Multi Function", "Laser Printer", 10);
+        int ppm;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter Device Name:");
+        String name = scanner.nextLine();
+        System.out.print("Enter Device Description:");
+        String description = scanner.nextLine();
+        System.out.print("Enter Pages per Minute (PPM): ");
+        ppm = scanner.nextInt();
+        Printer aPrinter = new Printer(name, description, ppm);
+        aPrinter.setId(aPrinter.generateId());
+        printers.add(aPrinter);
+        //scanner.nextLine(); // consume the remaining newline character
     }
 
     public void printComputers() {
-        for (Computer computer : computers) {
-            System.out.println(computer.toString());
+        System.out.println("Computers:\n");
+        System.out.format("%-10s%-20s%-20s%s\n", "ID", "Name", "Description", "Manufacture");
+        for (Computer c : computers) {
+            System.out.format("%-10d%-20s%-20s%s\n", c.getId(), c.getName(), c.getDescription(), c.getManufacture());
         }
     }
 
     public void printPrinters() {
-        for (Printer printer : printers) {
-            System.out.println(printer.toString());
+        System.out.println("Printers:\n");
+        System.out.format("%-10s%-20s%-20s%s\n", "ID", "Name", "Description", "PPM");
+        for (Printer p : printers) {
+            System.out.format("%-10d%-20s%-20s%d\n", p.getId(), p.getName(), p.getDescription(), p.getPpm());
         }
     }
 
@@ -38,4 +68,3 @@ public class Store {
         printPrinters();
     }
 }
-
