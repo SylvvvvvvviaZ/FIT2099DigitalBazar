@@ -1,7 +1,3 @@
-package main;
-
-import main.controllers.Store;
-
 import java.util.Scanner;
 
 public class BazarDriver {
@@ -40,8 +36,8 @@ public class BazarDriver {
         public static int menuItem() { // The static menuItem method is owned by the MenuInput class
             Scanner sel = new Scanner(System.in);
 
-            System.out.println("1) New main.models.Computer");
-            System.out.println("2) New main.models.Printer");
+            System.out.println("1) New Computer");
+            System.out.println("2) New Printer");
             System.out.println("3) List Computers");
             System.out.println("4) List Printers");
             System.out.println("5) Exit");

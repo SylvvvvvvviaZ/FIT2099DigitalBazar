@@ -1,5 +1,3 @@
-package main.models;
-
 public class Printer extends Device {
     private int ppm;
 

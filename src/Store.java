@@ -1,5 +1,3 @@
-package main.controllers;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -20,11 +18,11 @@ public class Store {
     public void createComputers() {
         String name, description, manufacture;
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter main.models.Device Name:");
+        System.out.print("Enter Device Name:");
         name = scanner.nextLine();
-        System.out.print("Enter main.models.Device Description:");
+        System.out.print("Enter Device Description:");
         description = scanner.nextLine();
-        System.out.print("Enter main.models.Computer Manufacture: ");
+        System.out.print("Enter Computer Manufacture: ");
         manufacture = scanner.nextLine();
         Computer aComputer = new Computer(name, description, manufacture);
         aComputer.setId(aComputer.generateId());
@@ -34,9 +32,9 @@ public class Store {
     public void createPrinters() {
         int ppm;
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter main.models.Device Name:");
+        System.out.print("Enter Device Name:");
         String name = scanner.nextLine();
-        System.out.print("Enter main.models.Device Description:");
+        System.out.print("Enter Device Description:");
         String description = scanner.nextLine();
         System.out.print("Enter Pages per Minute (PPM): ");
         ppm = scanner.nextInt();
