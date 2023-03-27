@@ -1,19 +1,25 @@
 package main;
 
+import main.controllers.PurchaseManager;
 import main.controllers.Store;
+import main.models.Purchase;
+import main.utils.MenuManager;
 
 import java.util.Scanner;
 
 public class BazarDriver {
 
     public static void main(String[] args) {
-        Store store = new Store();
+        MenuManager menuManager = new MenuManager();
+        PurchaseManager purchaseManager = new PurchaseManager();
+        Store store = new Store(menuManager, purchaseManager); // pass MenuManager and PurchaseManager to Store constructor
 
-        // console I/O menu selection
-        int selection;
-        do {
-            selection = MenuInput.menuItem();
-            switch (selection) {
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            int option = menuManager.menuItem();
+
+            switch (option) {
                 case 1:
                     store.createComputers();
                     break;
@@ -21,34 +27,27 @@ public class BazarDriver {
                     store.createPrinters();
                     break;
                 case 3:
-                    store.printComputers();
+                    Purchase purchase = store.createPurchase();;
+                    if (purchase != null) {
+                        purchaseManager.makePurchase(store, purchase);
+                    }
                     break;
                 case 4:
-                    store.printPrinters();
+                    store.printComputers();
                     break;
                 case 5:
-                    System.out.println("Exiting FIT2099 Digital Bazar.");
+                    store.printPrinters();
                     break;
+                case 6:
+                    purchaseManager.printPurchases();
+                    break;
+                case 7:
+                    System.out.println("Exiting program.");
+                    return;
                 default:
-                    System.out.println("Invalid selection, please try again.");
+                    System.out.println("Invalid option. Please try again.");
                     break;
             }
-        } while (selection != 5);
-    }
-
-    public static class MenuInput {
-        public static int menuItem() { // The static menuItem method is owned by the MenuInput class
-            Scanner sel = new Scanner(System.in);
-
-            System.out.println("1) New main.models.Computer");
-            System.out.println("2) New main.models.Printer");
-            System.out.println("3) List Computers");
-            System.out.println("4) List Printers");
-            System.out.println("5) Exit");
-            System.out.print("Select one:");
-            int choice = Integer.parseInt(sel.nextLine());
-            System.out.println("Your choice:"+choice);
-            return choice;
         }
     }
 }

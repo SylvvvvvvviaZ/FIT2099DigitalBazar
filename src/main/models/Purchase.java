@@ -2,7 +2,6 @@ package main.models;
 import main.utils.PurchaseType;
 import main.utils.Utils;
 
-import java.util.Random;
 public abstract class Purchase {
     private int purchaseID;
     private int customerID;

@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d818f810-3dc9-47ea-b9b1-08745142b9c6" name="Changes" comment="Create Java packages main include controllers, models, utils.">
-      <change afterPath="$PROJECT_DIR$/src/main/models/OnlinePurchase.java" afterDir="false" />
+    <list default="true" id="d818f810-3dc9-47ea-b9b1-08745142b9c6" name="Changes" comment="Implement the purchase and its two types from the Preliminary.">
+      <change afterPath="$PROJECT_DIR$/src/main/utils/MenuManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/models/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/models/Computer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/models/InStorePurchase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/models/InStorePurchase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/models/OnlinePurchass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/models/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/models/Printer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BazarDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BazarDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/controllers/IData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controllers/IData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/controllers/PurchaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controllers/PurchaseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/controllers/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controllers/Store.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/models/Purchase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/models/Purchase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/utils/PurchaseType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utils/PurchaseType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +48,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/a726928/Desktop/xzho0118/src/main/models",
+    "last_opened_file_path": "/Users/a726928/Desktop/xzho0118/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,8 +59,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/models" />
       <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/main/models" />
     </key>
   </component>
   <component name="RunManager">
@@ -221,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679914243786</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Implement the purchase and its two types from the Preliminary.">
+      <created>1679918001378</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1679918001378</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +254,7 @@
     <MESSAGE value="just create a copy for Bootcamp3 branch." />
     <MESSAGE value="make a copy for branch Bootcamp3." />
     <MESSAGE value="Create Java packages main include controllers, models, utils." />
-    <option name="LAST_COMMIT_MESSAGE" value="Create Java packages main include controllers, models, utils." />
+    <MESSAGE value="Implement the purchase and its two types from the Preliminary." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement the purchase and its two types from the Preliminary." />
   </component>
 </project>
