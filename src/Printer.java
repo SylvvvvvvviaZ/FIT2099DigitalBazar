@@ -1,30 +1,23 @@
-public class Printer extends Device{
-    int ppm;
+public class Printer extends Device {
+    private int ppm;
 
-    //a constructor
-    public Printer(int ppm, String name, String description) {
-        super(name,description);
+    public Printer(String name, String description, int ppm) {
+        super(name, description);
         this.ppm = ppm;
     }
 
-    //a getter
     public int getPpm() {
+
         return ppm;
     }
 
-    //a setter
     public void setPpm(int ppm) {
+
         this.ppm = ppm;
     }
 
-    //"toString" methods
     @Override
-    public String toString() {
-        return "Printer{" +
-                "ppm=" + ppm +
-                '}';
+    public int generateId() {
+        return Utils.nextID(100, 999);
     }
-
-
-
 }
