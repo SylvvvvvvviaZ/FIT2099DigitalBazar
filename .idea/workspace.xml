@@ -5,8 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d818f810-3dc9-47ea-b9b1-08745142b9c6" name="Changes" comment="Merge remote-tracking branch 'FIT2099bootcamp2/main'">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_3_2023,_5_10_pm_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_3_2023__5_10_pm__Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/controllers/IData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/controllers/PurchaseManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/models/InStorePurchase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/models/OnlinePurchass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/models/Purchase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/utils/PurchaseType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BazarDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BazarDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/models/Computer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/models/Device.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/models/Printer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controllers/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utils/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,20 +49,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/a726928/Desktop/FIT2099B2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/a726928/Desktop/xzho0118/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="BazarDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BazarDriver" />
@@ -81,6 +92,7 @@
       <workItem from="1679321026086" duration="483000" />
       <workItem from="1679321858273" duration="3404000" />
       <workItem from="1679575993228" duration="342000" />
+      <workItem from="1679911034230" duration="722000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1678700859868</created>
