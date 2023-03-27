@@ -1,3 +1,5 @@
+package main.models;
+
 public class Computer extends Device {
     private String manufacture;
 
