@@ -1,5 +1,7 @@
 package main.models;
 
+import main.utils.Utils;
+
 public class Computer extends Device {
     private String manufacture;
 
