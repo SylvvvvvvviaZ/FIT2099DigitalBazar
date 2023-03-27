@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d818f810-3dc9-47ea-b9b1-08745142b9c6" name="Changes" comment="Implement the purchase and its two types from the Preliminary.">
-      <change afterPath="$PROJECT_DIR$/src/main/utils/MenuManager.java" afterDir="false" />
+    <list default="true" id="d818f810-3dc9-47ea-b9b1-08745142b9c6" name="Changes" comment="Implement the purchase manager, and Update the driver class and the console IO.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/BazarDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BazarDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/controllers/IData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controllers/IData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/controllers/PurchaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controllers/PurchaseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/controllers/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controllers/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/models/Purchase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/models/Purchase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679918001378</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Implement the purchase manager, and Update the driver class and the console IO.">
+      <created>1679959919277</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1679959919277</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,6 +256,7 @@
     <MESSAGE value="make a copy for branch Bootcamp3." />
     <MESSAGE value="Create Java packages main include controllers, models, utils." />
     <MESSAGE value="Implement the purchase and its two types from the Preliminary." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement the purchase and its two types from the Preliminary." />
+    <MESSAGE value="Implement the purchase manager, and Update the driver class and the console IO." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement the purchase manager, and Update the driver class and the console IO." />
   </component>
 </project>
