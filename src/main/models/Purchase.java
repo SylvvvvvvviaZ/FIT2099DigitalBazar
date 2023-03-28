@@ -37,7 +37,7 @@ public abstract class Purchase {
         return purchaseType;
     }
 
-    public abstract String getPurchaseDetails();
+    //public abstract String getPurchaseDetails();
 
 
 }

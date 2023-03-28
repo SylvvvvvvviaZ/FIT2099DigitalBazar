@@ -14,11 +14,11 @@ public class OnlinePurchase extends Purchase{
         return deliveryAddress;
     }
 
-    @Override
-    public String getPurchaseDetails() {
-        return "Online purchase of device " + getDeviceID() +
-                " by customer " + getCustomerID() +
-                " on " + getDate() +
-                " with delivery address " + deliveryAddress;
-    }
+//    @Override
+//    public String getPurchaseDetails() {
+//        return "Online purchase of device " + getDeviceID() +
+//                " by customer " + getCustomerID() +
+//                " on " + getDate() +
+//                " with delivery address " + deliveryAddress;
+//    }
 }
