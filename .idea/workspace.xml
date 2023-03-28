@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d818f810-3dc9-47ea-b9b1-08745142b9c6" name="Changes" comment="add UML.">
+    <list default="true" id="d818f810-3dc9-47ea-b9b1-08745142b9c6" name="Changes" comment="add method createpurchase() in store class.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/BazarDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BazarDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/controllers/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controllers/Store.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +41,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/a726928/Desktop/xzho0118/src",
     "node.js.detected.package.eslint": "true",
@@ -232,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679961530421</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="add method createpurchase() in store class.">
+      <created>1679964182824</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1679964182824</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +268,7 @@
     <MESSAGE value="Implement the purchase and its two types from the Preliminary." />
     <MESSAGE value="Implement the purchase manager, and Update the driver class and the console IO." />
     <MESSAGE value="add UML." />
-    <option name="LAST_COMMIT_MESSAGE" value="add UML." />
+    <MESSAGE value="add method createpurchase() in store class." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method createpurchase() in store class." />
   </component>
 </project>

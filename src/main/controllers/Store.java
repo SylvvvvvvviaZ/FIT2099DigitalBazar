@@ -103,19 +103,19 @@ public class Store implements IData {
     public Purchase createPurchase() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter customer ID: ");
+        System.out.print("Enter Customer ID: ");
         int customerID = scanner.nextInt();
         scanner.nextLine();
 
-        System.out.print("Enter device ID: ");
+        System.out.print("Enter Device ID: ");
         int deviceID = scanner.nextInt();
         scanner.nextLine();
 
-        System.out.print("Enter date (dd/mm/yyyy): ");
+        System.out.print("Enter Date (dd/mm/yyyy): ");
         String date = scanner.nextLine();
-        scanner.nextLine();
+        //scanner.nextLine();
 
-        System.out.print("Enter type: ");
+        System.out.print("Enter Type (0 online) or (1 in-store): ");
         int purchaseTypeInt = scanner.nextInt();
         scanner.nextLine();
 
