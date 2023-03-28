@@ -16,6 +16,8 @@ public class InStorePurchase extends Purchase {
 
     @Override
     public String getPurchaseDetails() {
-        return "In-store purchase of device " + getDeviceID() + " by customer " + getCustomerID() + " on " + getDate() + " at " + storeLocation;
+        return "In-store purchase of device " + getDeviceID() +
+                " by customer " + getCustomerID() +
+                " on " + getDate() + " at " + storeLocation;
     }
 }

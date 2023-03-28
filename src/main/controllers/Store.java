@@ -129,7 +129,10 @@ public class Store implements IData {
         Purchase purchase = new Purchase(customerID, deviceID, date, purchaseType) {
             @Override
             public String getPurchaseDetails() {
-                return null;
+                return "Purchase: customerID=" + this.getCustomerID() +
+                        ", deviceID=" + this.getDeviceID() +
+                        ", date=" + this.getDate() +
+                        ", purchaseType=" + this.getPurchaseType() ;
             }
         };
         purchaseManager.makePurchase(this, purchase);
