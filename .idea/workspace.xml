@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d818f810-3dc9-47ea-b9b1-08745142b9c6" name="Changes" comment="add method createpurchase() in store class.">
+    <list default="true" id="d818f810-3dc9-47ea-b9b1-08745142b9c6" name="Changes" comment="change createpurchase() in store class.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/controllers/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controllers/Store.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679964182824</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="change createpurchase() in store class.">
+      <created>1679965742965</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1679965742966</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +277,7 @@
     <MESSAGE value="Implement the purchase manager, and Update the driver class and the console IO." />
     <MESSAGE value="add UML." />
     <MESSAGE value="add method createpurchase() in store class." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method createpurchase() in store class." />
+    <MESSAGE value="change createpurchase() in store class." />
+    <option name="LAST_COMMIT_MESSAGE" value="change createpurchase() in store class." />
   </component>
 </project>

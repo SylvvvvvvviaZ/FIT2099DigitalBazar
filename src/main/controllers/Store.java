@@ -58,7 +58,6 @@ public class Store implements IData {
         aPrinter.setId(aPrinter.generateId());
         printers.add(aPrinter);
         devices.add(aPrinter);
-        //scanner.nextLine(); // consume the remaining newline character
     }
 
     public void printComputers() {
