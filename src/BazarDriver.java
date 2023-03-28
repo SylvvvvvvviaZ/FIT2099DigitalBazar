@@ -1,5 +1,3 @@
-package main;
-
 import main.controllers.PurchaseManager;
 import main.controllers.Store;
 import main.models.Purchase;

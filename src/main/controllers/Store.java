@@ -5,6 +5,7 @@ import main.models.Device;
 import main.models.Printer;
 import main.models.Purchase;
 import main.utils.MenuManager;
+import main.utils.PurchaseType;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -112,26 +113,29 @@ public class Store implements IData {
 
         System.out.print("Enter date (dd/mm/yyyy): ");
         String date = scanner.nextLine();
-
-        System.out.print("Enter type (0 online) or (1 in-store): ");
-        int purchaseType = scanner.nextInt();
         scanner.nextLine();
+
+        System.out.print("Enter type: ");
+        int purchaseTypeInt = scanner.nextInt();
+        scanner.nextLine();
+
+        PurchaseType purchaseType = PurchaseType.ONLINE;
+        if (purchaseTypeInt == 1) {
+            purchaseType = PurchaseType.IN_STORE;
+        }
 
         System.out.print("Enter delivery address: ");
         String deliveryAddress = scanner.nextLine();
 
-        Purchase purchase = new Purchase(customerID, deviceID, date, purchaseType, deliveryAddress) {
+        Purchase purchase = new Purchase(customerID, deviceID, date, purchaseType) {
             @Override
             public String getPurchaseDetails() {
-                return "Purchase: customerID=" + customerID +
-                        ", deviceID=" + deviceID +
-                        ", date=" + date +
-                        ", purchaseType=" + purchaseType +
-                        ", deliveryAddress=" + deliveryAddress;
+                return null;
             }
         };
         purchaseManager.makePurchase(this, purchase);
         return purchase;
     }
+
 
 }

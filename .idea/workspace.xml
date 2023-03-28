@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d818f810-3dc9-47ea-b9b1-08745142b9c6" name="Changes" comment="Implement the purchase manager, and Update the driver class and the console IO.">
+    <list default="true" id="d818f810-3dc9-47ea-b9b1-08745142b9c6" name="Changes" comment="add UML.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BazarDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BazarDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/controllers/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controllers/Store.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,18 +60,13 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="BazarDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="BazarDriver" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BazarDriver" />
       <module name="FIT2099DigitalBazar" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.BazarDriver" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -228,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679959919277</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add UML.">
+      <created>1679961530421</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1679961530421</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +261,7 @@
     <MESSAGE value="Create Java packages main include controllers, models, utils." />
     <MESSAGE value="Implement the purchase and its two types from the Preliminary." />
     <MESSAGE value="Implement the purchase manager, and Update the driver class and the console IO." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement the purchase manager, and Update the driver class and the console IO." />
+    <MESSAGE value="add UML." />
+    <option name="LAST_COMMIT_MESSAGE" value="add UML." />
   </component>
 </project>
