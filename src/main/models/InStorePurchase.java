@@ -18,6 +18,7 @@ public class InStorePurchase extends Purchase {
     public String getPurchaseDetails() {
         return "In-store purchase of device " + getDeviceID() +
                 " by customer " + getCustomerID() +
-                " on " + getDate() + " at " + storeLocation;
+                " on " + getDate() +
+                " at " + storeLocation;
     }
 }

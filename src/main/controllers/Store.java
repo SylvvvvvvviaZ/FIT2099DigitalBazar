@@ -1,9 +1,6 @@
 package main.controllers;
 
-import main.models.Computer;
-import main.models.Device;
-import main.models.Printer;
-import main.models.Purchase;
+import main.models.*;
 import main.utils.MenuManager;
 import main.utils.PurchaseType;
 
@@ -13,22 +10,20 @@ import java.util.Scanner;
 public class Store implements IData {
     private ArrayList<Computer> computers;
     private ArrayList<Printer> printers;
-    private ArrayList<Device> devices;
     private MenuManager menuManager;
     private PurchaseManager purchaseManager;
 
     public Store(MenuManager menuManager, PurchaseManager purchaseManager) {
         this.computers = new ArrayList<Computer>();
         this.printers = new ArrayList<Printer>();
-        this.devices = new ArrayList<Device>();
         this.menuManager = menuManager;
         this.purchaseManager = purchaseManager;
     }
 
-    public void initStore(int numOfComputers, int numOfPrinters) {
-        computers = new ArrayList<>(numOfComputers);
-        printers = new ArrayList<>(numOfPrinters);
-    }
+//    public void initStore(int numOfComputers, int numOfPrinters) {
+//        computers = new ArrayList<>(numOfComputers);
+//        printers = new ArrayList<>(numOfPrinters);
+//    }
 
     public void createComputers() {
         String name, description, manufacture;
@@ -42,7 +37,6 @@ public class Store implements IData {
         Computer aComputer = new Computer(name, description, manufacture);
         aComputer.setId(aComputer.generateId());
         computers.add(aComputer);
-        devices.add(aComputer);
     }
 
     public void createPrinters() {
@@ -57,7 +51,6 @@ public class Store implements IData {
         Printer aPrinter = new Printer(name, description, ppm);
         aPrinter.setId(aPrinter.generateId());
         printers.add(aPrinter);
-        devices.add(aPrinter);
     }
 
     public void printComputers() {
@@ -84,22 +77,27 @@ public class Store implements IData {
         }
     }
 
-    public void runBazar() {
-        initStore(3, 2);
-        menuManager.menuItem();
-    }
+//    public void runBazar() {
+//        initStore(3, 2);
+//        menuManager.menuItem();
+//    }
 
     // This implementation iterates through the list of devices in the store, checks if the given id matches the id of any of the devices.
     public boolean isDeviceAvailable(int id) {  // To implement the IData interface in the Store class.
-        for (Device d : this.devices) {
-            if (d.getId() == id) {
+        for (Computer computer: this.computers) {
+            if (computer.getId() == id) {
+                return true;
+            }
+        }
+        for (Printer printer: this.printers) {
+            if (printer.getId() == id) {
                 return true;
             }
         }
         return false;
     }
 
-    public Purchase createPurchase() {
+    public void createPurchase() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter Customer ID: ");
@@ -118,26 +116,19 @@ public class Store implements IData {
         int purchaseTypeInt = scanner.nextInt();
         scanner.nextLine();
 
-        PurchaseType purchaseType = PurchaseType.ONLINE;
-        if (purchaseTypeInt == 1) {
-            purchaseType = PurchaseType.IN_STORE;
-        }
-
         System.out.print("Enter delivery address: ");
         String deliveryAddress = scanner.nextLine();
 
-        Purchase purchase = new Purchase(customerID, deviceID, date, purchaseType) {
-            @Override
-            public String getPurchaseDetails() {
-                return "Purchase: customerID=" + this.getCustomerID() +
-                        ", deviceID=" + this.getDeviceID() +
-                        ", date=" + this.getDate() +
-                        ", purchaseType=" + this.getPurchaseType() ;
-            }
-        };
+        Purchase data = null;
 
-        purchaseManager.makePurchase(this, purchase);
-        return purchase;
+        if (purchaseTypeInt == 1) {
+            data = new InStorePurchase(customerID, deviceID, date, deliveryAddress);
+        }
+        else{
+            data = new OnlinePurchase(customerID, deviceID, date, deliveryAddress);
+        }
+
+        purchaseManager.makePurchase(this, data);
     }
 
 

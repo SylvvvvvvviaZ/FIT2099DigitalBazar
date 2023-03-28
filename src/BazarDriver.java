@@ -11,11 +11,9 @@ public class BazarDriver {
         MenuManager menuManager = new MenuManager();
         PurchaseManager purchaseManager = new PurchaseManager();
         Store store = new Store(menuManager, purchaseManager); // pass MenuManager and PurchaseManager to Store constructor
-
-        Scanner scanner = new Scanner(System.in);
-
-        while (true) {
-            int option = menuManager.menuItem();
+        int option;
+        do {
+            option = menuManager.menuItem();
 
             switch (option) {
                 case 1:
@@ -25,10 +23,7 @@ public class BazarDriver {
                     store.createPrinters();
                     break;
                 case 3:
-                    Purchase purchase = store.createPurchase();;
-                    if (purchase != null) {
-                        purchaseManager.makePurchase(store, purchase);
-                    }
+                    store.createPurchase();;
                     break;
                 case 4:
                     store.printComputers();
@@ -41,11 +36,10 @@ public class BazarDriver {
                     break;
                 case 7:
                     System.out.println("Exiting program.");
-                    return;
                 default:
                     System.out.println("Invalid option. Please try again.");
                     break;
             }
-        }
+        } while(option != 7);
     }
 }
