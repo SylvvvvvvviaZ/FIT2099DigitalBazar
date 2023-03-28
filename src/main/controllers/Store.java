@@ -76,7 +76,7 @@ public class Store implements IData {
         String leftAlignFormatHeader = "| %-10s | %-20s | %-20s | %-10s |%n";
         System.out.format(leftAlignFormatHeader, "ID", "Name", "Description", "PPM");
 
-        String border = String.format("+%s+\n", "-".repeat(64));
+        String border = String.format("+%s+\n", "-".repeat(71));
         System.out.print(border);
 
         for (Printer p : printers) {
@@ -135,6 +135,7 @@ public class Store implements IData {
                         ", purchaseType=" + this.getPurchaseType() ;
             }
         };
+
         purchaseManager.makePurchase(this, purchase);
         return purchase;
     }
