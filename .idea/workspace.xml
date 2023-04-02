@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d818f810-3dc9-47ea-b9b1-08745142b9c6" name="Changes" comment="make changes for Task1.">
-      <change afterPath="$PROJECT_DIR$/src/main/utils/IMenuManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/utils/MenuManagerAdmin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/utils/MenuManagerEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BazarDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BazarDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/controllers/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controllers/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/utils/MenuManager.java" beforeDir="false" />
-    </list>
+    <list default="true" id="d818f810-3dc9-47ea-b9b1-08745142b9c6" name="Changes" comment="make changes for Task1." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -294,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679979360031</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="make changes for Task1.">
+      <created>1680442944340</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1680442944341</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
