@@ -15,5 +15,6 @@ public class MenuManagerEmployee implements IMenuManager {
         int choice = Integer.parseInt(sel.nextLine());
         System.out.println("Your choice:" + choice);
         return choice;
+
     }
 }
