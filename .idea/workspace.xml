@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d818f810-3dc9-47ea-b9b1-08745142b9c6" name="Changes" comment="change createpurchase() and makepurchase()." />
+    <list default="true" id="d818f810-3dc9-47ea-b9b1-08745142b9c6" name="Changes" comment="make changes for Task1.">
+      <change afterPath="$PROJECT_DIR$/src/main/utils/IMenuManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/utils/MenuManagerAdmin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/utils/MenuManagerEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BazarDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BazarDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/controllers/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controllers/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/utils/MenuManager.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +21,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -278,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679979137016</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="change createpurchase() and makepurchase().">
+      <created>1679979360030</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1679979360031</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +327,7 @@
     <MESSAGE value="add method createpurchase() in store class." />
     <MESSAGE value="change createpurchase() in store class." />
     <MESSAGE value="change createpurchase() and makepurchase()." />
-    <option name="LAST_COMMIT_MESSAGE" value="change createpurchase() and makepurchase()." />
+    <MESSAGE value="make changes for Task1." />
+    <option name="LAST_COMMIT_MESSAGE" value="make changes for Task1." />
   </component>
 </project>

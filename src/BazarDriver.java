@@ -1,14 +1,12 @@
 import main.controllers.PurchaseManager;
 import main.controllers.Store;
-import main.models.Purchase;
-import main.utils.MenuManager;
-
-import java.util.Scanner;
+import main.utils.IMenuManager;
+import main.utils.MenuManagerAdmin;
 
 public class BazarDriver {
 
     public static void main(String[] args) {
-        MenuManager menuManager = new MenuManager();
+        IMenuManager menuManager = new MenuManagerAdmin();
         PurchaseManager purchaseManager = new PurchaseManager();
         Store store = new Store(menuManager, purchaseManager); // pass MenuManager and PurchaseManager to Store constructor
         int option;

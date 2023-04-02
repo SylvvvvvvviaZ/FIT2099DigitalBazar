@@ -1,8 +1,7 @@
 package main.controllers;
 
 import main.models.*;
-import main.utils.MenuManager;
-import main.utils.PurchaseType;
+import main.utils.IMenuManager;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -10,10 +9,10 @@ import java.util.Scanner;
 public class Store implements IData {
     private ArrayList<Computer> computers;
     private ArrayList<Printer> printers;
-    private MenuManager menuManager;
+    private IMenuManager menuManager;
     private PurchaseManager purchaseManager;
 
-    public Store(MenuManager menuManager, PurchaseManager purchaseManager) {
+    public Store(IMenuManager menuManager, PurchaseManager purchaseManager) {
         this.computers = new ArrayList<Computer>();
         this.printers = new ArrayList<Printer>();
         this.menuManager = menuManager;
