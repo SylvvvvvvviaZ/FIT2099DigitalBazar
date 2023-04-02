@@ -1,4 +1,4 @@
-package main.models;
+package main.models.purchases;
 import main.utils.PurchaseType;
 import main.utils.Utils;
 
@@ -15,7 +15,7 @@ public abstract class Purchase {
         this.deviceID = deviceID;
         this.date = date;
         this.purchaseType = purchaseType;
-    }
+    } //The constructor for the Purchase class already includes exception handling for the setters, so it does not need to be updated.
 
     public int getPurchaseID() {
         return purchaseID;
@@ -37,8 +37,18 @@ public abstract class Purchase {
         return purchaseType;
     }
 
-    //public abstract String getPurchaseDetails();
+//    public void setDate(String date) {
+//        this.date = date;
+//    }
 
+    public boolean setDate(String aDate) {
+        boolean isValid = false;
+        if(aDate.length() == 8) {
+            isValid = true;
+            date = aDate;
+        }
+        return (isValid);
+    }
 
 }
 

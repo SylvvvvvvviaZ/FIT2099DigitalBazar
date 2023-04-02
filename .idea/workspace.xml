@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d818f810-3dc9-47ea-b9b1-08745142b9c6" name="Changes" comment="make changes for Task1." />
+    <list default="true" id="d818f810-3dc9-47ea-b9b1-08745142b9c6" name="Changes" comment="make changes for Task1.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BazarDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BazarDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/controllers/PurchaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controllers/PurchaseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/controllers/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controllers/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/models/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/models/devices/Computer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/models/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/models/devices/Device.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/models/InStorePurchase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/models/purchases/InStorePurchase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/models/OnlinePurchase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/models/purchases/OnlinePurchase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/models/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/models/devices/Printer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/models/Purchase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/models/purchases/Purchase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/utils/MenuManagerEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utils/MenuManagerEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utils/Utils.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -293,7 +306,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680442944341</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="make changes for Task1.">
+      <created>1680443047314</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1680443047314</updated>
+    </task>
+    <task id="LOCAL-00032" summary="make changes for Task1.">
+      <created>1680443132384</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1680443132384</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

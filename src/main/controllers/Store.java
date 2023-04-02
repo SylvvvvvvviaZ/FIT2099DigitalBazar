@@ -1,6 +1,10 @@
 package main.controllers;
 
-import main.models.*;
+import main.models.devices.Computer;
+import main.models.devices.Printer;
+import main.models.purchases.InStorePurchase;
+import main.models.purchases.OnlinePurchase;
+import main.models.purchases.Purchase;
 import main.utils.IMenuManager;
 
 import java.util.ArrayList;
@@ -24,7 +28,7 @@ public class Store implements IData {
 //        printers = new ArrayList<>(numOfPrinters);
 //    }
 
-    public void createComputers() {
+    public void createComputers() throws Exception {
         String name, description, manufacture;
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter Device Name:");
@@ -38,7 +42,7 @@ public class Store implements IData {
         computers.add(aComputer);
     }
 
-    public void createPrinters() {
+    public void createPrinters() throws Exception {
         int ppm;
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter Device Name:");
@@ -96,7 +100,7 @@ public class Store implements IData {
         return false;
     }
 
-    public void createPurchase() {
+    public void createPurchase() throws Exception {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter Customer ID: ");

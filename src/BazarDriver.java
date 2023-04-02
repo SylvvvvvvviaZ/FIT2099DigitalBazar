@@ -5,7 +5,7 @@ import main.utils.MenuManagerAdmin;
 
 public class BazarDriver {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         IMenuManager menuManager = new MenuManagerAdmin();
         PurchaseManager purchaseManager = new PurchaseManager();
         Store store = new Store(menuManager, purchaseManager); // pass MenuManager and PurchaseManager to Store constructor
@@ -21,7 +21,7 @@ public class BazarDriver {
                     store.createPrinters();
                     break;
                 case 3:
-                    store.createPurchase();;
+                    store.createPurchase();
                     break;
                 case 4:
                     store.printComputers();
