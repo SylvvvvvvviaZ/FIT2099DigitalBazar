@@ -14,7 +14,6 @@ import main.utils.MenuManagerAdmin;
  * @see BazarDriver
  */
 public class BazarDriver {
-
     /**
      * Main driver class for the Bazar program. Displays a menu to the user, accepts user input, and calls the appropriate
      * methods based on the user's selection.
