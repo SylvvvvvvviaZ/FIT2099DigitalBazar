@@ -3,6 +3,16 @@ package main.utils;
 import java.util.Scanner;
 
 public class MenuManagerEmployee implements IMenuManager {
+    private static MenuManagerEmployee instance = null;
+
+    private MenuManagerEmployee() {}
+
+    public static MenuManagerEmployee getInstance() {
+        if (instance == null) {
+            instance = new MenuManagerEmployee();
+        }
+        return instance;
+    }
 
     public int menuItem() {
         Scanner sel = new Scanner(System.in);

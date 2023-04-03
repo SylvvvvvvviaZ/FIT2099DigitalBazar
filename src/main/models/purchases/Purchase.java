@@ -37,10 +37,6 @@ public abstract class Purchase {
         return purchaseType;
     }
 
-//    public void setDate(String date) {
-//        this.date = date;
-//    }
-
     public boolean setDate(String aDate) {
         boolean isValid = false;
         if(aDate.length() == 8) {

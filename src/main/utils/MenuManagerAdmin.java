@@ -4,6 +4,17 @@ import java.util.Scanner;
 
 public class MenuManagerAdmin implements IMenuManager {
 
+    private static MenuManagerAdmin instance = null;
+
+    public MenuManagerAdmin() {}
+
+    public static MenuManagerAdmin getInstance() {
+        if (instance == null) {
+            instance = new MenuManagerAdmin();
+        }
+        return instance;
+    }
+
     public int menuItem() {
         Scanner sel = new Scanner(System.in);
 

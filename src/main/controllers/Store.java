@@ -11,10 +11,13 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Store implements IData {
+    //convert the access modifier of all the constructors from public to private
     private ArrayList<Computer> computers;
     private ArrayList<Printer> printers;
     private IMenuManager menuManager;
     private PurchaseManager purchaseManager;
+
+    private static Store instance = null;
 
     public Store(IMenuManager menuManager, PurchaseManager purchaseManager) {
         this.computers = new ArrayList<Computer>();
@@ -23,10 +26,13 @@ public class Store implements IData {
         this.purchaseManager = purchaseManager;
     }
 
-//    public void initStore(int numOfComputers, int numOfPrinters) {
-//        computers = new ArrayList<>(numOfComputers);
-//        printers = new ArrayList<>(numOfPrinters);
-//    }
+    //use the static factory method getInstance() obtain an instance of 'Store'
+    public static Store getInstance(IMenuManager menuManager, PurchaseManager purchaseManager) {
+        if (instance == null) {
+            instance = new Store(menuManager, purchaseManager);
+        }
+        return instance;
+    }
 
     public void createComputers() throws Exception {
         String name, description, manufacture;

@@ -5,11 +5,19 @@ import main.models.purchases.Purchase;
 import java.util.ArrayList;
 
 public class PurchaseManager {
+    private static PurchaseManager instance = null;
     private ArrayList<Purchase> purchases;
 
     public PurchaseManager() {
         this.purchases = new ArrayList<Purchase>();
     } //This constructor is already updated to throw an exception if any of the setters returns false.
+
+    public static PurchaseManager getInstance() {
+        if (instance == null) {
+            instance = new PurchaseManager();
+        }
+        return instance;
+    }
 
     public void makePurchase(IData devices, Purchase data) {
         if (devices.isDeviceAvailable(data.getDeviceID())) {
