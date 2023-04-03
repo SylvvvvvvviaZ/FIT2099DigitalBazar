@@ -10,6 +10,23 @@ import main.utils.IMenuManager;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * The Store class represents a store that sells computers and printers.
+
+ * It implements the IData interface to provide a method for checking device availability.
+
+ * It also has methods for creating computers and printers, printing lists of available computers and printers,
+
+ * and creating purchases.
+
+ * This class uses the singleton pattern to ensure that there is only one instance of the Store class.
+
+ * @author Xiaowen Zhou
+
+ * @version 1.0
+
+ * @see IData
+ */
 public class Store implements IData {
     //convert the access modifier of all the constructors from public to private
     private ArrayList<Computer> computers;
@@ -18,7 +35,12 @@ public class Store implements IData {
     private PurchaseManager purchaseManager;
 
     private static Store instance = null;
-
+    /**
+     * Private constructor for the Store class.
+     * To create an instance of the Store class, use the getInstance() method.
+     * @param menuManager the IMenuManager to be used by the Store instance
+     * @param purchaseManager the PurchaseManager to be used by the Store instance
+     */
     public Store(IMenuManager menuManager, PurchaseManager purchaseManager) {
         this.computers = new ArrayList<Computer>();
         this.printers = new ArrayList<Printer>();
@@ -26,6 +48,13 @@ public class Store implements IData {
         this.purchaseManager = purchaseManager;
     }
 
+    /**
+     * Returns the instance of the Store class.
+     * If an instance has not yet been created, it will create one.
+     * @param menuManager the IMenuManager to be used by the Store instance
+     * @param purchaseManager the PurchaseManager to be used by the Store instance
+     * @return the instance of the Store class
+     */
     //use the static factory method getInstance() obtain an instance of 'Store'
     public static Store getInstance(IMenuManager menuManager, PurchaseManager purchaseManager) {
         if (instance == null) {
@@ -34,6 +63,10 @@ public class Store implements IData {
         return instance;
     }
 
+    /**
+     * Creates a computer and adds it to the list of available computers.
+     * @throws Exception if there is an error generating an ID for the computer
+     */
     public void createComputers() throws Exception {
         String name, description, manufacture;
         Scanner scanner = new Scanner(System.in);
@@ -48,6 +81,10 @@ public class Store implements IData {
         computers.add(aComputer);
     }
 
+    /**
+     * Creates a printer and adds it to the list of available printers.
+     * @throws Exception if there is an error generating an ID for the printer
+     */
     public void createPrinters() throws Exception {
         int ppm;
         Scanner scanner = new Scanner(System.in);
@@ -62,6 +99,9 @@ public class Store implements IData {
         printers.add(aPrinter);
     }
 
+    /**
+     * Prints a list of available computers in the store with their details.
+     */
     public void printComputers() {
         System.out.println("Computers:\n");
         String formatString = "| %-5s | %-20s | %-20s | %-15s |%n";
@@ -72,6 +112,9 @@ public class Store implements IData {
         }
     }
 
+    /**
+     * Prints a list of all the printers in the store with their details.
+     */
     public void printPrinters() {
         System.out.println("Printers:\n");
         String leftAlignFormat = "| %-10d | %-20s | %-20s | %-10d |%n";
@@ -86,11 +129,11 @@ public class Store implements IData {
         }
     }
 
-//    public void runBazar() {
-//        initStore(3, 2);
-//        menuManager.menuItem();
-//    }
-
+    /**
+     * Checks if a device with the given id is available in the store.
+     * @param id The id of the device to check for availability.
+     * @return true if a device with the given id is available, false otherwise.
+     */
     // This implementation iterates through the list of devices in the store, checks if the given id matches the id of any of the devices.
     public boolean isDeviceAvailable(int id) {  // To implement the IData interface in the Store class.
         for (Computer computer: this.computers) {
@@ -106,6 +149,10 @@ public class Store implements IData {
         return false;
     }
 
+    /**
+     * Creates a new purchase based on user input and sends it to the purchase manager to be processed.
+     * @throws Exception If an error occurs while creating or processing the purchase.
+     */
     public void createPurchase() throws Exception {
         Scanner scanner = new Scanner(System.in);
 

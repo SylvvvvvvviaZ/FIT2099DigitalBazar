@@ -3,8 +3,10 @@ import main.controllers.Store;
 import main.utils.IMenuManager;
 import main.utils.MenuManagerAdmin;
 
+/**
+ * <h1>Bazar Driver </h1>
+ */
 public class BazarDriver {
-
     public static void main(String[] args) throws Exception {
         IMenuManager menuManager = new MenuManagerAdmin();
         PurchaseManager purchaseManager = new PurchaseManager();
