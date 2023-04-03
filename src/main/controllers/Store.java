@@ -166,7 +166,6 @@ public class Store implements IData {
 
         System.out.print("Enter Date (dd/mm/yyyy): ");
         String date = scanner.nextLine();
-        //scanner.nextLine();
 
         System.out.print("Enter Type (0 online) or (1 in-store): ");
         int purchaseTypeInt = scanner.nextInt();
