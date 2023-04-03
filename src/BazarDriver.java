@@ -1,12 +1,24 @@
+import main.controllers.IData;
 import main.controllers.PurchaseManager;
 import main.controllers.Store;
 import main.utils.IMenuManager;
 import main.utils.MenuManagerAdmin;
 
 /**
- * <h1>Bazar Driver </h1>
+ * The main driver class for the Bazar program.
+ * Creates an instance of the MenuManagerAdmin class to display the main menu options.
+ * Creates instance of the PurchaseManager and Store classes to manage purchases and the store's inventory.
+ * Handles user input and calls the appropriate methods in the Store and PurchaseManager classes based on the user's selections.
+ * @author Xiaowen Zhou
+ * @version 1.0
+ * @see BazarDriver
  */
 public class BazarDriver {
+
+    /**
+     * Main driver class for the Bazar program. Displays a menu to the user, accepts user input, and calls the appropriate
+     * methods based on the user's selection.
+     */
     public static void main(String[] args) throws Exception {
         IMenuManager menuManager = new MenuManagerAdmin();
         PurchaseManager purchaseManager = new PurchaseManager();
